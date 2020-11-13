@@ -1,7 +1,7 @@
 import torch.nn as nn
 import numpy as np
 from abc import abstractmethod
-from tensorboardX import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 
 class MetaTemplate(nn.Module):
   def __init__(self, model_func, n_way, n_support, flatten=True, leakyrelu=False, tf_path=None, change_way=True):

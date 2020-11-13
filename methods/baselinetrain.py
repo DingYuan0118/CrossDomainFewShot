@@ -1,7 +1,7 @@
 from methods import backbone
 
 import torch.nn as nn
-from tensorboardX import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 
 # --- conventional supervised training ---
 class BaselineTrain(nn.Module):

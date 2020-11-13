@@ -7,7 +7,7 @@ from methods import gnnnet
 from methods.backbone import model_dict
 from methods import backbone
 from methods import gnn
-from tensorboardX import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 
 
 class LFTNet(nn.Module):
