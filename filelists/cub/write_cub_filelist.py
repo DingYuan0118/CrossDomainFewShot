@@ -3,9 +3,10 @@ from os import listdir
 from os.path import isfile, isdir, join
 import os
 import random
+from pathlib import Path
 
 cwd = os.getcwd()
-data_path = join(cwd,'source/CUB_200_2011/images')
+data_path = join(cwd,'CUB_200_2011/images')
 savedir = './'
 dataset_list = ['base','val','novel']
 
@@ -20,7 +21,7 @@ classfile_list_all = []
 
 for i, folder in enumerate(folder_list):
     folder_path = join(data_path, folder)
-    classfile_list_all.append( [ join(folder_path, cf) for cf in listdir(folder_path) if (isfile(join(folder_path,cf)) and cf[0] != '.')])
+    classfile_list_all.append( [ Path(join(folder_path, cf)).as_posix() for cf in listdir(folder_path) if (isfile(join(folder_path,cf)) and cf[0] != '.')])
     random.shuffle(classfile_list_all[i])
 
 

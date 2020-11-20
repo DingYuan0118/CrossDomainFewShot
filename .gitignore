@@ -42,7 +42,7 @@ models/*.t7
 */**/*.dylib*
 test/data/legacy_serialized.pt
 *~
-filelists/CUB/CUB_200_2011*
+filelists/cub/CUB_200_2011*
 filelists/miniImagenet/ILSVRC2015*
 *.sh
 record/*
