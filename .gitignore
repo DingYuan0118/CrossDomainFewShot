@@ -55,3 +55,9 @@ output/log
 output/features
 output/results
 .vscode/
+*.tgz
+*.jpg
+*.bmp
+*.jpg
+*.xml
+*.txt
